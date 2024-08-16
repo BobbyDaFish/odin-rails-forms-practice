@@ -1,0 +1,11 @@
+<h1>User#new</h1>
+<p>Find me in app/views/user/new.html.erb</p>
+<%= form_with model: @users do |form| %>
+  <%= form.label "First Name: " %>
+  <%= form.text_field :first_name %>
+  <%= form.label "Last Name: " %>
+  <%= form.text_field :last_name %>
+  <%= form.label "Tell me other stuff: " %>
+  <%= form.text_field :other_stuff %>
+  <%= form.submit "Create" %>
+<% end %>
